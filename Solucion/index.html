@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solución al Problema del Agente Viajero usando Colonia de Hormigas</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="icon" type="image/png" href="img/travel.png" />
+	</head>
+	<body>
+		<div class="espacio-titulo">
+			<center>
+				<h1>Problema de Algente Viajero</h1>
+				<h4>Resuelto con Algoritmo de Colonia de Hormigas</h4>
+			</center>
+		</div>
+		<center id='main-container'>
+			<div class='container-results'>
+				<h4 class='header-title'><b>Ciudades</b></h4>
+				<canvas id='canvas-puntos-iniciales' width='500' height='500'></canvas>
+				<h4 class='header-title'><b>Mejores Soluciónes en Algunas Iteraciones</b></h4>
+				<div class='steps_container' id='steps_container'>
+					<div class='info-gen'>
+						<canvas id='canvas-gen-1' width='500' height='500'></canvas>
+						<h4>Generación 1</h4>
+						<h5>Costo: 2000.000000</h5>
+					</div>					<div class='info-gen'>
+						<canvas id='canvas-gen-2' width='500' height='500'></canvas>
+						<h4>Generación 2</h4>
+						<h5>Costo: 2027.337719</h5>
+					</div>					<div class='info-gen'>
+						<canvas id='canvas-gen-3' width='500' height='500'></canvas>
+						<h4>Generación 3</h4>
+						<h5>Costo: 2027.337719</h5>
+					</div>					<div class='info-gen'>
+						<canvas id='canvas-gen-4' width='500' height='500'></canvas>
+						<h4>Generación 4</h4>
+						<h5>Costo: 2027.337719</h5>
+					</div>					<div class='info-gen'>
+						<canvas id='canvas-gen-5' width='500' height='500'></canvas>
+						<h4>Generación 5</h4>
+						<h5>Costo: 2027.337719</h5>
+					</div>					<div class='info-gen'>
+						<canvas id='canvas-gen-6' width='500' height='500'></canvas>
+						<h4>Generación 6</h4>
+						<h5>Costo: 2442.641455</h5>
+					</div>					<div class='info-gen'>
+						<canvas id='canvas-gen-7' width='500' height='500'></canvas>
+						<h4>Generación 7</h4>
+						<h5>Costo: 2027.337719</h5>
+					</div>					<div class='info-gen'>
+						<canvas id='canvas-gen-8' width='500' height='500'></canvas>
+						<h4>Generación 8</h4>
+						<h5>Costo: 2027.337719</h5>
+					</div>					<div class='info-gen'>
+						<canvas id='canvas-gen-9' width='500' height='500'></canvas>
+						<h4>Generación 9</h4>
+						<h5>Costo: 2027.337719</h5>
+					</div>					<div class='info-gen'>
+						<canvas id='canvas-gen-10' width='500' height='500'></canvas>
+						<h4>Generación 10</h4>
+						<h5>Costo: 2027.337719</h5>
+					</div>
+				</div>
+				<div class='container-sol-final' id='container-sol-final'>
+					<h4 class='header-title'><b>Mejor Solución</b></h4>
+						<div class='info-gen'>
+						<canvas id='canvas-best-sol' width='500' height='500'></canvas>
+						<h4>Mejor Solución</h4>
+						<h5>Costo: 2000.000000</h5>
+					</div>
+				</div>
+			</div>
+			<div class='container-graph'><h4 class='header-title'><b>Avance óptimo</b></h4>
+				<div id='chart-avance-optimo'></div>
+			</div>
+		</center>
+
+		<script src="js/config.js" type="text/javascript"></script>
+		<script src="js/funciones.js" type="text/javascript"></script>
+		<script src="js/init.js" type="text/javascript"></script>
+		<script src="js/loader.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawAvanceOptimo);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solución al Problema del Agente Viajero usando Colonia de Hormigas</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="icon" type="image/png" href="img/travel.png" />
+	</head>
+	<body>
+		<div class="espacio-titulo">
+			<center>
+				<h1>Problema de Algente Viajero</h1>
+				<h4>Resuelto con Algoritmo de Colonia de Hormigas</h4>
+			</center>
+		</div>
+		<center id='main-container'>
+			<div class='container-results'>
+				<h4 class='header-title'><b>Ciudades</b></h4>
+				<canvas id='canvas-puntos-iniciales' width='500' height='500'></canvas>
+				<h4 class='header-title'><b>Mejores Soluciónes en Algunas Iteraciones</b></h4>
+Aqui va el contenido
+			</div>
+			<div class='container-graph'><h4 class='header-title'><b>Avance óptimo</b></h4>
+				<div id='chart-avance-optimo'></div>
+			</div>
+		</center>
+
+		<script src="js/config.js" type="text/javascript"></script>
+		<script src="js/init.js" type="text/javascript"></script>
+		<script src="js/loader.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawAvanceOptimo);
+		</script>
+	</body>
+</html>

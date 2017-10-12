@@ -11,8 +11,11 @@ Programa que proporciona una solución subóptima al problema del Agente Viajero
 ## Optimización por Colonia de Hormigas
 **Optimización por Colonia de Hormigas** es una tecnica probabilistica para optimización. La fuente inspiradora de la optimización por colinias de hormigas es el comportamiento forrajeo (buscar ampliamente alimentos o provisiones) de colonias de hormigas reales. Buscando el camino óptimo en el gráfico basado en el comportamiento de las hormigas buscando un camino entre su colonia y la fuente de alimento.
 
-##Problema del Agente viajero (TSP)
+## Problema del Agente viajero (TSP)
 En el Problema del Agente Viajero - TSP (Travelling Salesman Problem), el objetivo es visitar todas las ciudades de un conjunto de ciudades, pasando por cada ciudad solamente una vez, volviendo al punto de partida, y que además minimice el costo total de la ruta.
+
+### Requisitos
+ - Google Chrome con soporte canvas
 
 ### Compilación
 	go build hormigas.go

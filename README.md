@@ -24,7 +24,7 @@ En el Problema del Agente Viajero - TSP (Travelling Salesman Problem), el objeti
 	./hormigas < config.txt
 
 #### **Importante**
-Es necesario pasarle un arhivo con la configuración del problema.  El archivo debe contener lo siguiente y ese orden:
+Es necesario pasarle un archivo con la configuración del problema.  El archivo debe contener lo siguiente y ese orden:
 
     Número de Generaciónes: 10
     Número de Hormigas: 10000
